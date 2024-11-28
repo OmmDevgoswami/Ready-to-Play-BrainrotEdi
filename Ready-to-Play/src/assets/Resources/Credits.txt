@@ -1,2 +1,4 @@
 winnier : <a href="https://www.flaticon.com/free-icons/winner" title="winner icons">Winner icons created by Freepik - Flaticon</a>
 Logo : <a href="https://www.flaticon.com/free-icons/sports-and-competition" title="sports and competition icons">Sports and competition icons created by Freepik - Flaticon</a>
+stadium : Photo by Aleksandr Neplokhov: https://www.pexels.com/photo/concrete-building-1557144/
+sports_ground  : Photo by Frederico  Erthal: https://www.pexels.com/photo/an-empty-sports-stadium-3571569/
