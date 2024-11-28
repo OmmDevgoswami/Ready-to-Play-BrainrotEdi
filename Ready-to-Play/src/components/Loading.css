@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.banner{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.banner .container h1 {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  color: #42e75d;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin-left: 0;
+  padding-left: 0px;
+  
+}
+
+.banner .container .logo {
+  width: 135px;
+  height: auto; 
+  object-fit: contain;
+  margin-right: 0;
+  padding: 35px;
+}
+
+.banner ::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('./src/assets/Resources/stadium.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1;  
+}
+
+h1:hover {
+    background: -webkit-linear-gradient(39deg, #2cd98d, #c4cac8, #313735, #3ce14f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
