@@ -1,68 +1,31 @@
-import React from "react"
-import { useState } from "react"
-import { VenueFinder } from "./VenueFinder.css"
+import React from "react";
+import { useState } from "react";
+import { VenueFinder } from "./VenueFinder.css";
+import "./VenueFinder.css";
 
 
-
-import "./style.css";
-
-
-export const MyPlugin = () => {
-  return (
-    <div id="app">
-                    <div className="w-full max-w-[1200px] m-auto bg-black text-white shadow-lg rounded-lg">    <div className="flex justify-between items-center px-6 py-4 bg-green-500">
-            <span className="text-white font-title text-xl">Ready to Play</span>
-            <div className="flex justify-center w-full gap-3">
-              <span className="material-symbols-outlined text-white">circle</span>
-              <span className="material-symbols-outlined text-white">circle</span>
-              <span className="material-symbols-outlined text-white">circle</span>
-              <span className="material-symbols-outlined text-white">circle</span>
-            </div>
-          </div>
-          <header className="flex justify-between px-6 py-4 bg-black text-white items-center">
-            <span className="font-title text-2xl">Venue Finder</span>
-          </header>
-          <main className="p-6 grid grid-cols-3 gap-6 relative">
-            {[...Array(6)].map((_, index) => (
-              <div
-                key={index}
-                className="relative flex items-center space-x-4 cursor-pointer group"
-              >
-                <div className="bg-gray-300 text-center py-4 px-6 rounded-md hover:bg-gray-400 relative group-hover:z-10">
-                  Location - {index + 1}
-                </div>
-                <div className="absolute left-full top-1/2 transform -translate-y-1/2 bg-green-200 shadow-lg rounded-lg p-6 w-[260px] h-[200px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-hover:z-10 flex flex-col items-center">
-                 
-                  <p className="text-sm text-center text-black mb-2">
-                    A Brief Description of the Event
-                  </p>
-                  <div className="grid grid-cols-2 gap-2">
-                    {["Slot-1", "Slot-2", "Slot-3", "Slot-4"].map((slot, i) => (
-                      <div
-                        key={i}
-                        className="bg-gray-300 text-center py-2 rounded-xs text-sm"
-                      >
-                        {slot}
-                      </div>
-                    ))}
-                  </div>
-                </div>
+function VenueFinder() {
+    const venues = [
+      { id: 1, name: 'Mercedez Benz Stadium', image: 'https://s44872.pcdn.co/wp-content/uploads/2018/06/CREDIT-MBS.jpg.webp' },
+      { id: 2, name: 'Narendra Modi Stadium', image: 'https://panethos.wordpress.com/wp-content/uploads/2023/01/img_1614155148638_800-992765294.jpeg?w=1024' },
+      { id: 3, name: 'Gaming Lounge 1', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqFW33k21hLxV2E30ar7pmv2kE35jbUgNnFQ&s' },
+      { id: 4, name: 'Gaming Lounge 2', image: 'https://assets.simpleviewcms.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://lasvegas.simpleviewcrm.com/images/listings/original_hyperX-vmb_3840907B-912D-3346-A8DF7E61234AEB72-38408e8bec3f3f7.jpg'},
+      { id: 5, name: 'Sofi Stadium', image: 'https://www.sofistadium.com/assets/img/thumb-0fab6f1c38.jpg' },
+      { id: 6, name: 'Lusail Stadium', image: 'https://www.japantimes.co.jp/uploads/imported_images/uploads/2022/09/np_file_181882.jpeg'},
+    ];
+    return (
+        <div className="venue-finder">
+          <h1>Find Your Venue</h1>
+          <div className="venue-grid">
+            {venues.map((venue) => (
+              <div key={venue.id} className="venue-box">
+                <img src={venue.image} alt={venue.name} className="venue-image" />
+                <p className="venue-name">{venue.name}</p>
               </div>
             ))}
-          </main>
-          <footer className="flex justify-between items-center p-4 bg-green-500 relative">
-            <div className="flex justify-center w-full gap-2">
-              <span className="material-symbols-outlined text-green-950 cursor-pointer">circle</span>
-              <span className="material-symbols-outlined text-green-950 cursor-pointer">circle</span>
-              <span className="material-symbols-outlined text-green-950 cursor-pointer">circle</span>
-              <span className="material-symbols-outlined text-green-950 cursor-pointer">circle</span>
-            </div>
-            <span className="material-symbols-outlined text-white cursor-pointer absolute right-6 bottom-4">
-              star
-            </span>
-          </footer>
+          </div>
         </div>
-                </div>
-  )
-}
-
+      );
+    }
+    
+    export default VenueFinder;
