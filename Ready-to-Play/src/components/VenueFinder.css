@@ -1,5 +1,5 @@
 body {
-    background-color: darkgreen;
+    background: linear-gradient(to right, #52e63b, #177c17);
 }
 .venue-finder {
     text-align: center;
