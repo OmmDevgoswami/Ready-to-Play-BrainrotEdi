@@ -1,13 +1,17 @@
 
-
-const BookingPage = ({venue}) => {
-    if (!venue) {
-        return <h2> Venue not found</h2>
-    }
-
+import React from "react"
+import { Link } from "react-router-dom"
+import './BookingPage.css'
+<p>moo</p>
+const BookingPage = () =>{
     return (
-        <div style={{maxWidth: "800px", margin: "0 auto", padding: "20px"}}>
-            {VenueName}
-        </div>
+        <div className ="booking-page">
+        <div className="venue-info">
+        {/*Venue Image*/}
+        <img src = "https://cloudfront-us-east-1.images.arcpublishing.com/coxohio/GAA6RRJZQFNXOXKHZY4Z3RSKFQ.jpg"
+         alt ="Mercedez Bens Stadium"
+         className ="venue-image">
+         </img>
+        </div></div>
     )
 }
