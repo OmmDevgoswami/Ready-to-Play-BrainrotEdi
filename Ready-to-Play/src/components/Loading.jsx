@@ -1,4 +1,5 @@
 import './Loading.css';
+import HomePage from './Homepage.jsx'
 
 function Loading() {
   return (
@@ -9,7 +10,7 @@ function Loading() {
                     <img className="logo" src="./src/assets/Resources/Logo.png" alt="logo" /> 
                     Ready-to-Play
                 </h1>
-                <button type="button" className="btn btn-secondary btn-lg"> Let The Rumbling Begin </button>
+                <button type="button" className="btn btn-secondary btn-lg"><a href="HomePage"> Let The Rumbling Begin </a></button>
             </div>
       </div>
     </>
