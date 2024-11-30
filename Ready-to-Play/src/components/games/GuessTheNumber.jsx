@@ -27,21 +27,25 @@ const GuessTheNumber = () => {
   };
 
   return (
-    <div className="game-container">
-      <h1>Guess the Number</h1>
-      <p>Guess a number between 1 and 25:</p>
-      <p className="attempts-info">You have 5 attempts to guess the number!</p>
-      <input
-        type="number"
-        min="1"
-        max="25"
-        value={userGuess}
-        onChange={(e) => setUserGuess(e.target.value)}
-      />
-      <button onClick={checkNumber} disabled={attempts >= 5}>Guess</button> {/* Disable after 5 attempts */}
-      <p className="result-text">{result}</p>
+    <div className="guess-number-container">
+      <div className="game-container">
+        <h1>Guess the Number</h1>
+        <p>Guess a number between 1 and 25:</p>
+        <p className="attempts-info">You have 5 attempts to guess the number!</p>
+        <input
+          type="number"
+          min="1"
+          max="25"
+          value={userGuess}
+          onChange={(e) => setUserGuess(e.target.value)}
+        />
+        <button onClick={checkNumber} disabled={attempts >= 5}>
+          Guess
+        </button>
+        <p className="result-text">{result}</p>
+      </div>
     </div>
-  );
+  );  
 };
 
 export default GuessTheNumber;

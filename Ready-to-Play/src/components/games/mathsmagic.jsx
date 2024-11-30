@@ -12,8 +12,8 @@ const easyQuestions = [
   { question: "2 + 2 - 2", answer: "2" },
   { question: "10 - 6 x 0 ", answer: "10" },
   { question:"9 x 0 + 1", answer: "1"},
-  { question:"1 + 1 -2", answer: "0"},
-  { question:"9 x 2 + 1", answer: "1"},
+  { question:"1 + 1 - 2", answer: "0"},
+  { question:"9 x 2 + 1", answer: "18"},
 ];
 
 const App = () => {
@@ -53,21 +53,23 @@ const App = () => {
     }
     setUserAnswer("");
   };
-
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Put your busy mind to answer....</h1>
-      {question && <h2>{question.question}</h2>}
-      <input
-        type="text"
-        value={userAnswer}
-        onChange={handleAnswerChange}
-        placeholder="Your answer..."
-      />
-      <button onClick={handleSubmit}>SUBMIT</button>
-      <p>{message}</p>
+    <div className="maths-magic-container">
+      <div>
+        <h1>Put your busy mind to answer....</h1>
+        {question && <h2>{question.question}</h2>}
+        <input
+          type="text"
+          value={userAnswer}
+          onChange={handleAnswerChange}
+          placeholder="Your answer..."
+        />
+        <button onClick={handleSubmit}>SUBMIT</button>
+        <p>{message}</p>
+      </div>
     </div>
   );
+  
 };
 
 export default App;

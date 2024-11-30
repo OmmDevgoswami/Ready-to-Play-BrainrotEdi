@@ -5,11 +5,12 @@ import Home from './components/Home.jsx';
 import Contact from './components/Contact.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import Game from './components/games/GuessTheNumber.jsx'
 import './App.css';
 
 function AppContent() {
   const location = useLocation();
-  const isLoading = location.pathname === '/';
+  const isLoading = location.pathname === '/' ;
 
   return (
     <>
@@ -18,6 +19,7 @@ function AppContent() {
         <Route path="/" element={<Loading />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/game" element={<Game />} />
       </Routes>
       {!isLoading && <Footer />}
     </>
