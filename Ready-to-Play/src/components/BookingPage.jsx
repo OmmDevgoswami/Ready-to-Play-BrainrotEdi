@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./BookingPage.css";
 
 const BookingPage = ({ venue }) => {
@@ -6,13 +6,13 @@ const BookingPage = ({ venue }) => {
 
   return (
     <div className="booking-page">
-      <h2>{venue.name}</h2>
-      <p>{venue.details}</p>
-      <h3>Available Time Slots</h3>
-      <ul>
+      <h3>Book {venue.name}</h3>
+      <ul className="time-slots">
         {timeSlots.map((slot, index) => (
           <li key={index}>
-            <button>{slot}</button>
+            <button onClick={() => window.location.href = `/details/${venue.id}?time=${slot}`}>
+              {slot}
+            </button>
           </li>
         ))}
       </ul>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import BookingPage from "./BookingPage";
 import "./VenueFinder.css";
 
 
@@ -12,15 +13,19 @@ function VenueFinder() {
       { id: 5, name: 'Sofi Stadium', city: "Los Angeles", country: "United States", image: 'https://www.sofistadium.com/assets/img/thumb-0fab6f1c38.jpg' },
       { id: 6, name: 'Lusail Stadium', city: "Lusail", country: "Qatar", image: 'https://www.japantimes.co.jp/uploads/imported_images/uploads/2022/09/np_file_181882.jpeg'},
     ];
-    return (
+
+    //tracks hovered venue with state
+    const [hoveredVenue, setHoveredVenue] = useState(null);
+        return (
         <div className="venue-finder">
           <h1>Find Your Venue!</h1>
           <div className="venue-grid">
             {venues.map((venue) => (
-              <div key={venue.id} className="venue-box">
+              <div key={venue.id} className="venue-box" onMouseEnter={() => setHoveredVenue(venue)} onMouseLeave={() => setHoveredVenue(null)}> 
                 <img src={venue.image} alt={venue.name} className="venue-image" />
                 <p className="venue-name">{venue.name}</p>
                 <p className= "venue-location"> {venue.city}, {venue.country}</p>
+                {hoveredVenue?.id === venue.id && (<div classNmae = "booking-popup"> <BookingPage venue = {hoveredVenue} /> </div> )}
               </div>
             ))}
           </div>
