@@ -1,8 +1,8 @@
 import React from "react";
 import "./Homepage.css"; 
-// import imgPlayer from "./assets/Resources/gaming_enthusiast_image.jpg"; 
+import imgPlayer from '../assets/Resources/gaming_enthusiast_image.jpg'; 
 
-const Homepage = () => {
+const Home = () => {
   return (
     <main className="home-container">
       
@@ -35,4 +35,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Home;

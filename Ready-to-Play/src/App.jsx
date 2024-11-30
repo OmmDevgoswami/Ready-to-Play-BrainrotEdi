@@ -1,22 +1,37 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Loading from './components/Loading.jsx';
-import HomePage from './components/Homepage.jsx';
-import VenueFinder from './components/VenueFinder.jsx';
-import './App.css'
+import Home from './components/Home.jsx';
+import Contact from './components/Contact.jsx';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import Game from './components/games/GuessTheNumber.jsx'
+import './App.css';
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+  const isLoading = location.pathname === '/' ;
+
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Loading />} />
-          <Route path="/HomePage" element={<HomePage />} />
-          <Route path="/VenueFinder" element ={<VenueFinder />} />
-        </Routes>
-      </Router>
+      {!isLoading && <Header />}
+      <Routes>
+        <Route path="/" element={<Loading />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/game" element={<Game />} />
+      </Routes>
+      {!isLoading && <Footer />}
     </>
   );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+export default App;

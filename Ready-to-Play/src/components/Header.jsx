@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
-import logo from "./assets/Resources/ready_to_play_logo.jpg"; 
+import logo from '../assets/Resources/Logo.png'; 
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -12,20 +13,31 @@ const Header = () => {
           alt="Logo"
           className="logo"
         />
-        <span className="title1">Ready to Play</span>
+        <span className="title1">Ready-to-Play</span>
       </div>
 
       {/* Navigation Buttons */}
       <nav className="nav">
-        <button>About</button>
-        <button>Brainrot</button>
-        <button>Venue Finder</button>
-        <button>Booking</button>
+        <Link to="/home">
+          <button>Home</button>
+        </Link>
+        <Link to="/venue">
+          <button>Venue Finder</button>
+        </Link>
+        <Link to="/brainrot">
+          <button>Brainrot</button>
+        </Link>
+        <Link to="/contact">
+          <button>Contact Us</button>
+        </Link>
+        <Link to="/about">
+          <button>About</button>
+        </Link>
       </nav>
 
       {/* Login and Sign Up Buttons */}
       <div className="auth">
-        <button>Login</button>
+        {/* <button>Login</button> */}
         <button>Sign Up</button>
       </div>
     </header>

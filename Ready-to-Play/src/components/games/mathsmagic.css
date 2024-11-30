@@ -1,0 +1,62 @@
+.maths-magic-container {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #004d00, #00b300, #32a852);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.maths-magic-container h1 {
+  color: #e0ffe0; /* Soft light green title */
+}
+
+.maths-magic-container h2 {
+  color: #b3ffcc; /* Lighter green for questions */
+}
+
+.maths-magic-container div {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.maths-magic-container input[type="text"] {
+  width: 220px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #00ff88; /* Bright green border */
+  border-radius: 5px;
+  background-color: #003300; /* Dark green background */
+  color: #ccffcc; /* Light green text */
+}
+
+.maths-magic-container button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #0073e6; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.maths-magic-container button:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+}
+
+.maths-magic-container p {
+  color: #32ff7e; /* Bright green feedback text */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.maths-magic-container input::placeholder {
+  color: #b3ffb3; /* Soft green placeholder */
+}

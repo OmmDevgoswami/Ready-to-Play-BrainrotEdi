@@ -1,0 +1,62 @@
+.tic-tac-toe-page{
+    font-family: 'Arial', sans-serif;
+    background-color: #001f1f;
+    color: #00ff88;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    color: #00ff88;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #003300;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: #002f2f;
+    border: 2px solid #00ff88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: #007bff;
+  }
+  
+  .square.O {
+    color: #00ff88;
+  }
+  
+  .square.X {
+    color: #007bff;
+  }
+  
+  .winner p {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #00ff88;
+  }
+  
+  @media (max-width: 480px) {
+    .board {
+      grid-template-columns: repeat(3, 80px);
+    }
+  
+    .square {
+      width: 80px;
+      height: 80px;
+      font-size: 2em;
+    }
+  }
+  
