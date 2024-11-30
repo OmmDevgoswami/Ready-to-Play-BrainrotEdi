@@ -5,7 +5,8 @@ import Home from './components/Home.jsx';
 import Contact from './components/Contact.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
-import Game from './components/games/GuessTheNumber.jsx'
+import Game from './components/games/GuessTheNumber.jsx';
+import VenueFinder from './components/VenueFinder.jsx';
 import './App.css';
 
 function AppContent() {
@@ -20,6 +21,7 @@ function AppContent() {
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/game" element={<Game />} />
+        <Route path="/VenueFinder" elemente={<VenueFinder />} />
       </Routes>
       {!isLoading && <Footer />}
     </>
