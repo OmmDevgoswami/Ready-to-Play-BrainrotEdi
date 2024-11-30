@@ -1,5 +1,6 @@
 import React from 'react';
-import './tooltip.css'; // Ensure this path is correct
+import './tooltip.css'; 
+import Chatbot from '../assets/Resources/chatbot.png'
 
 const Footer = () => {
   return (
@@ -27,7 +28,7 @@ const Footer = () => {
           <span><i className="fa fa-youtube"></i></span> {/* Corrected to span */}
         </li>
       </ul>
-      <p className='bot'> Hello </p>
+      <div className='bot'> <img className="logo" src={Chatbot} alt="chatbot" />  </div>
     </footer>
   );
 };

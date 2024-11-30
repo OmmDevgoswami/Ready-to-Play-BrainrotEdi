@@ -1,0 +1,20 @@
+/* Apply styles to the contact page specifically */
+.contact-page {
+    background: linear-gradient(to right, #52e63b, #177c17);
+    min-height: 100vh;
+    padding: 2rem 0; 
+  }
+
+  
+.bi-linkedin {
+    color: #0077b5; /* LinkedIn blue */
+  }
+  
+  .bi-github {
+    color: #333; /* GitHub dark gray */
+  }
+  
+  .bi-envelope-fill {
+    color: #d93b3d; /* Email icon red */
+  }
+  

@@ -2,3 +2,6 @@ winnier : <a href="https://www.flaticon.com/free-icons/winner" title="winner ico
 Logo : <a href="https://www.flaticon.com/free-icons/sports-and-competition" title="sports and competition icons">Sports and competition icons created by Freepik - Flaticon</a>
 stadium : Photo by Aleksandr Neplokhov: https://www.pexels.com/photo/concrete-building-1557144/
 sports_ground  : Photo by Frederico  Erthal: https://www.pexels.com/photo/an-empty-sports-stadium-3571569/
+location : <a href="https://www.flaticon.com/free-icons/map" title="map icons">Map icons created by Freepik - Flaticon</a>
+bot : <a href="https://www.flaticon.com/free-icons/chatbot" title="chatbot icons">Chatbot icons created by littleicon - Flaticon</a>
+chatbot : <a href="https://www.flaticon.com/free-icons/chatbot" title="chatbot icons">Chatbot icons created by juicy_fish - Flaticon</a>

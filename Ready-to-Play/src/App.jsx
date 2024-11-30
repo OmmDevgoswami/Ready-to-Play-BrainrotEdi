@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Loading from './components/Loading.jsx';
 import Home from './components/Home.jsx';
+import Contact from './components/Contact.jsx';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import './App.css';
 
-function App() {
+function AppContent() {
   const location = useLocation();
   const isLoading = location.pathname === '/';
 
@@ -16,18 +17,19 @@ function App() {
       <Routes>
         <Route path="/" element={<Loading />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       {!isLoading && <Footer />}
     </>
   );
 }
 
-function AppWrapper() {
+function App() {
   return (
     <Router>
-      <App />
+      <AppContent />
     </Router>
   );
 }
 
-export default AppWrapper;
+export default App;

@@ -29,7 +29,8 @@
 .bot{
   color: white;
   font-size: 14px;
-  padding-right: 200px;
+  padding-right: 50px;
+  padding-left: 50px;
   top: 20px;
   margin: 10px;
 }
