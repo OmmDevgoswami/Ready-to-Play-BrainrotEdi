@@ -1,5 +1,4 @@
-import './App.css'
-
+import './mathsmagic.css';
 import { useState, useEffect } from 'react';
 
 const difficultQuestions = [
