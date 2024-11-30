@@ -21,7 +21,7 @@ const Header = () => {
         <Link to="/home">
           <button>Home</button>
         </Link>
-        <Link to="/VenueFinder">
+        <Link to="/venue-finder">
           <button>Venue Finder</button>
         </Link>
         <Link to="/brainrot">

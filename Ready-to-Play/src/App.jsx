@@ -22,7 +22,7 @@ function AppContent() {
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/game" element={<Game />} />
-        <Route path="/VenueFinder" elemente={<VenueFinder />} />
+        <Route path="/venue-finder" element={<VenueFinder />} />
       </Routes>
       {!isLoading && <Footer />}
     </>
