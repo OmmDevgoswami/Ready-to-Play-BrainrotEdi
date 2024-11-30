@@ -7,6 +7,7 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Game from './components/games/GuessTheNumber.jsx';
 import VenueFinder from './components/VenueFinder.jsx';
+import BookingPage from './components/BookingPage.jsx';
 import './App.css';
 
 function AppContent() {
