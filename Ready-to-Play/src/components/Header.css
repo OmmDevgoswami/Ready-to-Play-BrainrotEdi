@@ -22,7 +22,7 @@
 }
 
   .nav,.auth{
-    gap: 18px;
+    gap: 15px;
     display: flex;
   }
   .nav button,
@@ -34,7 +34,7 @@
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bolder;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
