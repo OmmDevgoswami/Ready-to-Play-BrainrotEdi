@@ -26,7 +26,7 @@ function Brainrot() {
         venue: randomVenue ? '' : venue, // If randomVenue is true, leave venue empty
       };
 
-      const response = await axios.get('http://127.0.0.1:5000/get-real-venues', { params });
+      const response = await axios.get('http://127.0.0.1:5000', { params });
       setVenues(response.data);
     } catch (err) {
       console.error(err);

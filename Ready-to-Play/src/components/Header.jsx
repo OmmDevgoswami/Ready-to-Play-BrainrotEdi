@@ -22,7 +22,9 @@ const Header = () => {
           <button>Home</button>
         </Link>
         <Link to="/venue">
-          <button>Venue Finder</button>
+          <button>
+            <span><i className="fa-solid fa-map-location-dot"></i> Venue Finder </span> 
+          </button>
         </Link>
         <Link to="/brainrot">
           <button>Brainrot</button>

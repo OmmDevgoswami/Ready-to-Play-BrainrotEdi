@@ -41,7 +41,7 @@ def get_coordinates_from_city(city_name):
         return f"{location['lat']},{location['lng']}"
     return None
 
-@app.route('/get-real-venues', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_real_venues():
     mood = request.args.get('mood')
     city_name = request.args.get('city')  # Optional city input
