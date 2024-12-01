@@ -64,12 +64,12 @@ const Contact = () => {
       email: "omm@example.com",
     },
     {
-      name: "Name5",
-      title: "Python Developer // UI-Designer",
-      imageSrc: "https://via.placeholder.com/100", // Replace with actual URL
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      email: "omm@example.com",
+      name: "Omm Devgoswami",
+      title: "Python Developer // UI-Designer // Full-stack",
+      imageSrc: "https://res.cloudinary.com/deuwunijk/image/upload/v1729536372/Logo_zlyq8q.png", // Replace with actual URL
+      linkedin: "https://www.linkedin.com/in/omm-devgoswami-86a561214/",
+      github: "https://github.com/OmmDevgoswami",
+      email: "teamuniverse.omm@gmail.com"
     },
     {
       name: "Name6",

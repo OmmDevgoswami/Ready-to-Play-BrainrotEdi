@@ -23,7 +23,7 @@ const Header = () => {
         </Link>
         <Link to="/venue">
           <button>
-            <span><i className="fa-solid fa-map-location-dot"></i> Venue Finder </span> 
+            Venue Finder 
           </button>
         </Link>
         <Link to="/brainrot">

@@ -36,14 +36,16 @@ function Brainrot() {
   };
 
   return (
-    <div className="container mt-5">
-      <div className="header">
-        <h1 className="text-center mb-4">Let the Randomness Takeover !!</h1>
-        <h3 className="text-center">
+    <div className="Brainrot">
+      <div className="top-level">
+        <h1>Let the Randomness Takeover!!</h1>
+        <br/>
+        <h3>
           It's a weekend, and you are not sure about your plans? <br />
           Let us help you find the most perfect and fun place to make this weekend super fun and memorable for you!
         </h3>
       </div>
+    <div className="container mt-5">
       {/* <h1 className="text-center mb-4">Let the Randomness Takeover !!</h1>
       <h3> It's a weekend and you are not sure about yours plans ? <br />Let us help you find the most perfect and fun place to make this weekend super fun and Memorable for You !! </h3> */}
       <form onSubmit={handleSearch}>
@@ -135,6 +137,7 @@ function Brainrot() {
           <p>No venues to display. Try searching with a different mood or city.</p>
         )}
       </div>
+    </div>
     </div>
   );
 }

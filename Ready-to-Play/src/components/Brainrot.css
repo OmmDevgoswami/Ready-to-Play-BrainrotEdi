@@ -1,8 +1,5 @@
 /* General Container Styling */
-body{
-    background-color: #000000;
-}
-.container {
+.Brainrot{
     background-color: #001f00; /* Deep black-green background */
     color: #e5ffe5; /* Soft green text */
     border-radius: 10px;
@@ -10,26 +7,30 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
   
-  /* Header Styling */
-  .header {
-    text-align: center;
-    color: #66ff66; /* Bright green for the headers */
-  }
-  
-  .header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  }
-  
-  .header h3 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: #aaffaa; /* Softer green for subheading */
-    margin-bottom: 20px;
-  }
-  
+/* General reset for top-level elements */
+.top-level {
+  display: flex; /* Use flexbox for vertical stacking */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align items */
+  color: #66ff66; /* Bright green for the top-levels */
+  text-align: center; /* Align text in the center */
+}
+
+.top-level h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px; /* Space below h1 */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.top-level h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #aaffaa; /* Softer green for subheading */
+  margin: 0; /* Reset default margin */
+  padding-top: 10px; /* Add space above h3 */
+}
+
   /* Form Styling */
   form {
     background-color: #002200; /* Dark green background */
