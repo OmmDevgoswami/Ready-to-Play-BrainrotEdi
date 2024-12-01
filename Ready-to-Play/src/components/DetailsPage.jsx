@@ -36,7 +36,7 @@ const DetailsPage = ({ venues }) => {
         <h3>Location</h3>
         <div className="map-image">
           <img
-            src={`https://maps.googleapis.com/maps/api/staticmap?center=${venue.city},${venue.country}&zoom=13&size=800x400&maptype=roadmap`}
+            src={`https://maps.googleapis.com/maps/api/staticmap?center=${venue.city},${venue.country}&zoom=13&size=800x400&maptype=roadmap&key=AIzaSyApc7QOlhXLQf7p4QyB37MO6xbis5ipWAM`}
             alt={`Map of ${venue.city}`}
           />
         </div>
