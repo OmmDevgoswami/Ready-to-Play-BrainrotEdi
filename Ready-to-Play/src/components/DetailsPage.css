@@ -1,9 +1,11 @@
 .details-page {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
+    gap: 20px;
   }
   
   
@@ -15,19 +17,18 @@
     max-width: 1200px;
   }
   .image-section {
-    width: 100%;
-    max-width: 400px;
-    height: 300px;
+    flex: 1;
+    height: 100%;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1));
+
   }
 
   .image-section img {
     width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: contain;
+    /*border-radius: 10px;*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
