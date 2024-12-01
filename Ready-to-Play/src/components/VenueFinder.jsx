@@ -23,8 +23,10 @@ function VenueFinder() {
           <div className="venue-grid">
             {venues.map((venue) => (
               <div key={venue.id} className="venue-box" onMouseEnter={() => setHoveredVenue(venue)} onMouseLeave={() => setHoveredVenue(null)}> 
+                <Link to= {`/details/${venue.id}?time = 12:00 PM`}>
                 <img src={venue.image} alt={venue.name} className="venue-image" />
                 <p className="venue-name">{venue.name}</p>
+                </Link>
                 <p className= "venue-location"> {venue.city}, {venue.country}</p>
                 {hoveredVenue?.id === venue.id && (<div className = "booking-popup"> <BookingPage venue = {hoveredVenue} /> </div> )}
               </div>

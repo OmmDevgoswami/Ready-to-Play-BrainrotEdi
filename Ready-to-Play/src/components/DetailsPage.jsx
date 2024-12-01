@@ -1,10 +1,14 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import "./DetailsPage.css";
 
 const DetailsPage = ({ venues }) => {
-  const { id } = useParams(); // finds venue via url
+  const { id } = useParams(); // finds venue via url\
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const time = queryParams.get("time");
   const venue = venues.find((v) => v.id === parseInt(id)); // finds venue depending on id
+
 
   if (!venue) {
     return <h2>Venue not found!</h2>; 
