@@ -10,7 +10,7 @@
     margin: 0;
   }
   
-  h1 {
+  .heading{
     color: #00ff88;
     margin-bottom: 20px;
     text-shadow: 2px 2px 5px #003300;

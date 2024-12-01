@@ -3,9 +3,12 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Loading from './components/Loading.jsx';
 import Home from './components/Home.jsx';
 import Contact from './components/Contact.jsx';
+import Venue from './components/VenueFinder.jsx'
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
-import Game from './components/games/GuessTheNumber.jsx'
+import Game1 from './components/games/GuessTheNumber.jsx'
+import Game2 from './components/games/TicTacToe.jsx'
+import Game3 from './components/games/mathsmagic.jsx'
 import './App.css';
 
 function AppContent() {
@@ -19,7 +22,10 @@ function AppContent() {
         <Route path="/" element={<Loading />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/game" element={<Game />} />
+        <Route path="/venue" element={<Venue />} />
+        <Route path="/buffer1" element={<Game1 />} />
+        <Route path="/buffer2" element={<Game2 />} />
+        <Route path="/buffer3" element={<Game3 />} />
       </Routes>
       {!isLoading && <Footer />}
     </>

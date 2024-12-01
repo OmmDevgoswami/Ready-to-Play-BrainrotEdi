@@ -12,7 +12,7 @@ function Loading() {
                     <img className="logo" src={logo} alt="logo" /> 
                     Ready-to-Play
                 </h1>
-                <Link to="/game">
+                <Link to="/home">
                     <button type="button" className="btn btn-secondary btn-lg"> Let The Rumbling Begin </button>
                 </Link>
             </div>

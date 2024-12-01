@@ -56,7 +56,7 @@ const App = () => {
   return (
     <div className="maths-magic-container">
       <div>
-        <h1>Put your busy mind to answer....</h1>
+        <h1 className='heading'>Put your busy mind to answer....</h1>
         {question && <h2>{question.question}</h2>}
         <input
           type="text"

@@ -13,8 +13,9 @@ function VenueFinder() {
       { id: 6, name: 'Lusail Stadium', city: "Lusail", country: "Qatar", image: 'https://www.japantimes.co.jp/uploads/imported_images/uploads/2022/09/np_file_181882.jpeg'},
     ];
     return (
+      
         <div className="venue-finder">
-          <h1>Find Your Venue!</h1>
+          <h1 className="heading">Find Your Venue!</h1>
           <div className="venue-grid">
             {venues.map((venue) => (
               <div key={venue.id} className="venue-box">
