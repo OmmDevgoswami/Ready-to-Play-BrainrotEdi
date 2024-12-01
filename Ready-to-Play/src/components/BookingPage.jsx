@@ -1,7 +1,10 @@
 import React from "react";
 import "./BookingPage.css";
+import { useNavigate } from "react-router-dom";
+
 
 const BookingPage = ({ venue }) => {
+  const navigate = useNavigate();
   const timeSlots = ["9:00 AM", "12:00 PM", "3:00 PM", "6:00 PM"]; // Example time slots
 
   return (

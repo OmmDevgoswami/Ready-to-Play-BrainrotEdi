@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import BookingPage from "./BookingPage";
+import { Link } from  "react-router-dom";
 import "./VenueFinder.css";
 
 
@@ -25,7 +26,7 @@ function VenueFinder() {
                 <img src={venue.image} alt={venue.name} className="venue-image" />
                 <p className="venue-name">{venue.name}</p>
                 <p className= "venue-location"> {venue.city}, {venue.country}</p>
-                {hoveredVenue?.id === venue.id && (<div classNmae = "booking-popup"> <BookingPage venue = {hoveredVenue} /> </div> )}
+                {hoveredVenue?.id === venue.id && (<div className = "booking-popup"> <BookingPage venue = {hoveredVenue} /> </div> )}
               </div>
             ))}
           </div>

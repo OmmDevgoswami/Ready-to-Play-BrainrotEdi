@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, version } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Loading from './components/Loading.jsx';
 import Home from './components/Home.jsx';
@@ -8,6 +8,7 @@ import Footer from './components/Footer.jsx';
 import Game from './components/games/GuessTheNumber.jsx';
 import VenueFinder from './components/VenueFinder.jsx';
 import BookingPage from './components/BookingPage.jsx';
+import DetailsPage from './components/DetailsPage.jsx';
 import './App.css';
 
 function AppContent() {
@@ -23,7 +24,8 @@ function AppContent() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/game" element={<Game />} />
         <Route path="/venue-finder" element={<VenueFinder />} />
-      </Routes>
+        <Route path="/details/:id" element={<DetailsPage />} />
+       </Routes>
       {!isLoading && <Footer />}
     </>
   );
