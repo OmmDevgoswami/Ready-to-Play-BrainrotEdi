@@ -48,7 +48,7 @@ const Contact = () => {
       email: "xyz@example.com",
     },
     {
-      name: "Name3",
+      name: "Mary",
       title: "Python Developer // Frontend Developer",
       imageSrc: "https://via.placeholder.com/100", // Replace with actual URL
       linkedin: "https://linkedin.com",
