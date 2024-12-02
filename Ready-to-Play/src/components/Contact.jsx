@@ -3,7 +3,7 @@ import './contact.css';
 
 const TeamCard = ({ name, title, imageSrc, linkedin, github, email }) => {
   return (
-    <div className="card text-center" style={{ width: "18rem", margin: "1rem" }}>
+    <div className="card text-center contactElements" style={{ width: "18rem", margin: "1rem" }}>
       <img
         src={imageSrc}
         className="card-img-top rounded-circle mx-auto mt-3"
@@ -32,52 +32,52 @@ const TeamCard = ({ name, title, imageSrc, linkedin, github, email }) => {
 const Contact = () => {
   const team = [
     {
-      name: "Name1",
-      title: "Full Stack Developer",
+      name: "Annanya Devi",
+      title: "Frontend Developer // Python Developer",
       imageSrc: "https://via.placeholder.com/100", // Replace with actual URL
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      email: "abid@example.com",
+      linkedin: "https://www.linkedin.com/in/annanya-devi-0212b82a7/",
+      github: "https://github.com/AnnanyaDevi2241004224",
+      email: "xyz@example.com",
     },
     {
-      name: "Name2",
-      title: "Front-End Developer // UI Designer",
+      name: "Oluwadamilola (Ewa) Edun",
+      title: "Full-stack Developer // Python Developer",
       imageSrc: "https://via.placeholder.com/100", // Replace with actual URL
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      email: "wahid@example.com",
+      linkedin: "https://www.linkedin.com/in/oluwadamilola-edun/",
+      github: "https://github.com/ewa-edun",
+      email: "xyz@example.com",
     },
     {
       name: "Name3",
-      title: "Full Stack / ML Developer",
+      title: "Python Developer // Frontend Developer",
       imageSrc: "https://via.placeholder.com/100", // Replace with actual URL
       linkedin: "https://linkedin.com",
       github: "https://github.com",
-      email: "ayush@example.com",
+      email: "xyz@example.com",
     },
     {
-      name: "Name4",
-      title: "Python Developer // UI-Designer",
+      name: "George Tsai ",
+      title: "C++ Developer // Front-end Developer",
       imageSrc: "https://via.placeholder.com/100", // Replace with actual URL
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      email: "omm@example.com",
+      linkedin: "https://www.linkedin.com/in/george-tsai-a59818287/",
+      github: "https://github.com/georgetsai2028",
+      email: "xyz@example.com",
     },
     {
       name: "Omm Devgoswami",
       title: "Python Developer // UI-Designer // Full-stack",
       imageSrc: "https://res.cloudinary.com/deuwunijk/image/upload/v1729536372/Logo_zlyq8q.png", // Replace with actual URL
-      linkedin: "https://www.linkedin.com/in/omm-devgoswami-86a561214/",
-      github: "https://github.com/OmmDevgoswami",
-      email: "teamuniverse.omm@gmail.com"
+    linkedin: "https://www.linkedin.com/in/omm-devgoswami-86a561214/",
+    github: "https://github.com/OmmDevgoswami",
+    email: "teamuniverse.omm@gmail.com"
     },
     {
-      name: "Name6",
-      title: "Python Developer // UI-Designer",
+      name: "Deep jyoti Das",
+      title: "UI-Designer // Frontend Developer",
       imageSrc: "https://via.placeholder.com/100", // Replace with actual URL
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      email: "omm@example.com",
+      linkedin: "https://www.linkedin.com/in/deep-jyoti-das-4148bb31a/",
+      github: "https://github.com/Deepjyoti78",
+      email: "xyz@example.com",
     },
   ];
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './tooltip.css'; 
 import Chatbot from '../assets/Resources/chatbot.png'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -28,7 +29,8 @@ const Footer = () => {
           <span><i className="fa fa-youtube"></i></span> {/* Corrected to span */}
         </li>
       </ul>
-      <div className='bot'> <img className="logo" src={Chatbot} alt="chatbot" />  </div>
+      
+      <div className='bot'><Link to="/brainrot"><img className="logo" src={Chatbot} alt="chatbot" /> </Link> </div>
     </footer>
   );
 };
