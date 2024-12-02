@@ -5,7 +5,8 @@ import Home from './components/Home.jsx';
 import Contact from './components/Contact.jsx';
 import Venue from './components/VenueFinder.jsx'
 import Brainrot from './components/Brainrot.jsx'
-import BookingPage from './components/BookingPage.jsx';
+// import BookingPage from './components/BookingPage.jsx';
+import Respite from './components/Respite.jsx';
 import DetailsPage from './components/DetailsPage.jsx';
 import About from './components/About.jsx'
 import Header from './components/Header.jsx';
@@ -39,6 +40,7 @@ function AppContent() {
         <Route path="/venue" element={<Venue />} />
         <Route path="/brainrot" element={<Brainrot />} />
         <Route path="/about" element={<About />} />
+        <Route path="/respite" element={<Respite/>} />
         <Route path="/buffer1" element={<Game1 />} />
         <Route path="/buffer2" element={<Game2 />} />
         <Route path="/buffer3" element={<Game3 />} />

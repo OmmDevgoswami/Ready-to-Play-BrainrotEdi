@@ -58,7 +58,7 @@ const Contact = () => {
     {
       name: "George Tsai ",
       title: "C++ Developer // Front-end Developer",
-      imageSrc: "https://via.placeholder.com/100", // Replace with actual URL
+      imageSrc: " https://media.licdn.com/dms/image/v2/D5603AQF5HGa8aKLWUw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1732677896954?e=1738800000&v=beta&t=6_IN559TVzruhJYF-FotDDDCI2AqL46vOF7bqMzyCvs", // Replace with actual URL
       linkedin: "https://www.linkedin.com/in/george-tsai-a59818287/",
       github: "https://github.com/georgetsai2028",
       email: "xyz@example.com",

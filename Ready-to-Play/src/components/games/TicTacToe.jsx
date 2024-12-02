@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./TicTacToe.css";
 
 const TicTacToe = () => {
   const [board, setBoard] = useState(Array(9).fill(""));
   const [isPlayerTurn, setIsPlayerTurn] = useState(true);
   const [winner, setWinner] = useState(null);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const venueData = location.state; // This contains the venue details
+  console.log(venueData.location);
 
   const handleClick = (index) => {
     if (board[index] || winner) return;
@@ -51,6 +56,15 @@ const TicTacToe = () => {
       computerMove();
     }
   }, [board]);
+
+  useEffect(() => {
+    if (winner) {
+      // Redirect to Game Over page after a short delay
+      setTimeout(() => {
+        navigate("/respite", { state: { result: winner,location: venueData.city} });
+      }, 2000);
+    }
+  }, [winner, navigate, venueData]);
 
   return (
     <div className="tic-tac-toe-page">
