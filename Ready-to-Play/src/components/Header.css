@@ -8,6 +8,7 @@
     background-color: #000; 
     color: #fff; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
   }
 .title1 {
   font-family: 'Press Start 2P', cursive;
@@ -21,7 +22,7 @@
 }
 
   .nav,.auth{
-    gap: 18px;
+    gap: 15px;
     display: flex;
   }
   .nav button,
@@ -33,7 +34,7 @@
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bolder;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }

@@ -13,6 +13,7 @@
   padding: 0 20px;
   height: 100%;
   width: 100%;
+  margin-top: 0;
   font-family: "Poppins", sans-serif;
   place-items: center;
   background: radial-gradient(circle at 50% 50%, #192233 20%, #000);

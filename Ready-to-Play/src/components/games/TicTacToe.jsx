@@ -55,7 +55,7 @@ const TicTacToe = () => {
   return (
     <div className="tic-tac-toe-page">
       <div className="tic-tac-toe">
-        <h1>Tic Tac Toe</h1>
+        <h1 className="heading">Tic Tac Toe</h1>
         <div className="board">
           {board.map((val, idx) => (
             <div

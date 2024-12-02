@@ -9,7 +9,7 @@
   height: 100vh;
 }
 
-.maths-magic-container h1 {
+.maths-magic-container .heading {
   color: #e0ffe0; /* Soft light green title */
 }
 

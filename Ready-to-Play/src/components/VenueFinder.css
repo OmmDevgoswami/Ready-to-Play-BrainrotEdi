@@ -1,11 +1,9 @@
-body {
-    background: linear-gradient(to right, #52e63b, #177c17);
-}
 .venue-finder {
+    background: linear-gradient(to right, #52e63b, #177c17);
     text-align: center;
     padding: 20px;
 }
-.venue-finder h1 {
+.venue-finder .heading{
     font-size: 36px;
     color: #333;
     margin-bottom: 20px;

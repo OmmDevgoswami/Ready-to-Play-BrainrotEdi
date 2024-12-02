@@ -1,0 +1,121 @@
+/* General Container Styling */
+.Brainrot{
+    background-color: #001f00; /* Deep black-green background */
+    color: #e5ffe5; /* Soft green text */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+/* General reset for top-level elements */
+.top-level {
+  display: flex; /* Use flexbox for vertical stacking */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align items */
+  color: #66ff66; /* Bright green for the top-levels */
+  text-align: center; /* Align text in the center */
+}
+
+.top-level h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px; /* Space below h1 */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.top-level h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #aaffaa; /* Softer green for subheading */
+  margin: 0; /* Reset default margin */
+  padding-top: 10px; /* Add space above h3 */
+}
+
+  /* Form Styling */
+  form {
+    background-color: #002200; /* Dark green background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-label {
+    color: #66ff66;
+    font-weight: bold;
+  }
+  
+  .form-select,
+  .form-control {
+    background-color: #001900; /* Very dark green */
+    color: #b3ffb3; /* Light green text */
+    border: 2px solid #005500; /* Medium green border */
+    border-radius: 5px;
+  }
+  
+  .form-select:focus,
+  .form-control:focus {
+    outline: none;
+    border-color: #00ff00; /* Bright green on focus */
+    box-shadow: 0 0 8px #00ff00;
+  }
+  
+  .form-check-input:checked {
+    background-color: #00ff00;
+    border-color: #00ff00;
+  }
+  
+  .form-check-label {
+    color: #99ff99;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #006600; /* Dark green */
+    border: none;
+    color: #e5ffe5;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #009900; /* Brighter green */
+    color: #ffffff; /* White text on hover */
+  }
+  
+  /* Error Text */
+  .text-danger {
+    color: #ff3333; /* Bright red for error messages */
+    font-weight: bold;
+  }
+  
+  /* Venue List */
+  .list-group {
+    margin-top: 20px;
+    border: 1px solid #005500;
+    background-color: #001900;
+    border-radius: 8px;
+  }
+  
+  .list-group-item {
+    background-color: #003300; /* Medium dark green */
+    color: #b3ffb3;
+    border: none;
+  }
+  
+  .list-group-item + .list-group-item {
+    border-top: 1px solid #005500;
+  }
+  
+  .list-group-item strong {
+    color: #66ff66; /* Bright green for venue names */
+  }
+  
+  .list-group-item:hover {
+    background-color: #004400; /* Slightly lighter green */
+  }
+  
+  /* Footer Text */
+  .mt-4 p {
+    color: #aaffaa; /* Soft green text for no-venues message */
+  }
+  

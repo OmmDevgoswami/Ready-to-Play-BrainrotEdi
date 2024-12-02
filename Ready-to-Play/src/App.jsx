@@ -3,12 +3,17 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Loading from './components/Loading.jsx';
 import Home from './components/Home.jsx';
 import Contact from './components/Contact.jsx';
+import Venue from './components/VenueFinder.jsx'
+import Brainrot from './components/Brainrot.jsx'
+import About from './components/About.jsx'
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
-import Game from './components/games/GuessTheNumber.jsx';
 import VenueFinder from './components/VenueFinder.jsx';
 import BookingPage from './components/BookingPage.jsx';
 import DetailsPage from './components/DetailsPage.jsx';
+import Game1 from './components/games/GuessTheNumber.jsx'
+import Game2 from './components/games/TicTacToe.jsx'
+import Game3 from './components/games/mathsmagic.jsx'
 import './App.css';
 
 const venues = [
@@ -34,7 +39,13 @@ function AppContent() {
         <Route path="/game" element={<Game />} />
         <Route path="/venue-finder" element={<VenueFinder />} />
         <Route path="/details/:id" element={<DetailsPage venues={venues}/>} />
-       </Routes>
+        <Route path="/venue" element={<Venue />} />
+        <Route path="/brainrot" element={<Brainrot />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/buffer1" element={<Game1 />} />
+        <Route path="/buffer2" element={<Game2 />} />
+        <Route path="/buffer3" element={<Game3 />} />
+      </Routes>
       {!isLoading && <Footer />}
     </>
   );

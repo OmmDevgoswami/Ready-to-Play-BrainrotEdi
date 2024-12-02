@@ -29,7 +29,7 @@ const GuessTheNumber = () => {
   return (
     <div className="guess-number-container">
       <div className="game-container">
-        <h1>Guess the Number</h1>
+        <h1 className='heading'>Guess the Number</h1>
         <p>Guess a number between 1 and 25:</p>
         <p className="attempts-info">You have 5 attempts to guess the number!</p>
         <input

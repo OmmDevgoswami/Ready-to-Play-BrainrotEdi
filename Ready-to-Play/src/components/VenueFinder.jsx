@@ -19,7 +19,7 @@ function VenueFinder() {
     const [hoveredVenue, setHoveredVenue] = useState(null);
         return (
         <div className="venue-finder">
-          <h1>Find Your Venue!</h1>
+          <h1 className="heading">Find Your Venue!</h1>
           <div className="venue-grid">
             {venues.map((venue) => (
               <div key={venue.id} className="venue-box" onMouseEnter={() => setHoveredVenue(venue)} onMouseLeave={() => setHoveredVenue(null)}> 

@@ -15,10 +15,9 @@ const Home = () => {
 
         
         <div className="button-group">
-          <button className="filter-button">Venue Name</button>
-          <button className="filter-button">Sports</button>
-          <button className="filter-button">City</button>
-          <button className="search-button">Search</button>
+          <button className="filter-button"><a href="https://www.ign.com/news">⚡Hottest Gaming News </a></button>
+          <button className="filter-button"><a href="https://escharts.com/upcoming-tournaments">🎮 E-sports Charts</a></button>
+          <button className="filter-button"><a href="https://www.thehindu.com/sport/"> 🏅 Trendy Sports News </a></button>
         </div>
       </section>
 
