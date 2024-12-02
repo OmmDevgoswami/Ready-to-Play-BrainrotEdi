@@ -1,0 +1,51 @@
+.booking-page {
+    list-style-type: none;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .locations {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .location-item {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .location-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .hover-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .time-slots {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+  .time-slot {
+    padding: 10px;
+    border: 1px solid green;
+    background-color: #e0e0e0;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    }
