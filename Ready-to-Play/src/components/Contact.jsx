@@ -42,7 +42,7 @@ const Contact = () => {
     {
       name: "Oluwadamilola (Ewa) Edun",
       title: "Full-stack Developer // Python Developer",
-      imageSrc: "https://via.placeholder.com/100", // Replace with actual URL
+      imageSrc: "https://avatars.githubusercontent.com/u/140631144?v=4", // Replace with actual URL
       linkedin: "https://www.linkedin.com/in/oluwadamilola-edun/",
       github: "https://github.com/ewa-edun",
       email: "xyz@example.com",
